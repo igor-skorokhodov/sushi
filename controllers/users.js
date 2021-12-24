@@ -35,7 +35,7 @@ function aboutUser(req, res, next) {
     .catch(next);
 }
 
-function updateUser(req, res, next) {
+/* function updateUser(req, res, next) {
   const id = req.headers.userid;
 
   return User.findByIdAndUpdate(
@@ -60,7 +60,7 @@ function updateUser(req, res, next) {
         next(err);
       }
     });
-}
+} */
 
 function login(req, res, next) {
   const { number, password } = req.body;
